@@ -11,4 +11,25 @@ numbers[7] = 0;
 
 Console.WriteLine(string.Join(", ", numbers));
 
+// вариант с рандомом
+
+Console.Write("Enter the size of the array: ");
+int[] Mass = new int[int.Parse(Console.ReadLine())];
+var random = new Random();
+for (int i = 0; i < Mass.Length; i++)
+{
+    Mass[i] = random.Next(0,2);
+    Console.WriteLine( Mass[i]);
+}
+
+
+
+
+
+
+
+
+
+
+
 
